@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Recomendador de libros</title>
+    <style>
+      /* Reset básico */
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #f9f9f9;
+        color: #333;
+        margin: 0;
+        padding: 20px;
+      }
+      h1 {
+        color: #2c3e50;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        max-width: 700px;
+        margin: 0 auto;
+      }
+      li {
+        background: white;
+        margin-bottom: 20px;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      }
+      strong {
+        font-size: 1.2em;
+        color: #34495e;
+      }
+      li > br {
+        margin-bottom: 8px;
+      }
+      form {
+        margin-top: 12px;
+      }
+      button {
+        background-color: #3498db;
+        color: white;
+        border: none;
+        padding: 8px 14px;
+        margin-right: 8px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: 600;
+        transition: background-color 0.3s ease;
+      }
+      button[name="valor"][value="no_me_gusta"] {
+        background-color: #e74c3c;
+      }
+      button:hover {
+        filter: brightness(0.9);
+      }
+      hr {
+        border: none;
+        border-top: 1px solid #eee;
+        margin: 20px 0 0 0;
+      }
+      p {
+        text-align: center;
+        margin-top: 40px;
+      }
+      a {
+        color: #2980b9;
+        text-decoration: none;
+        font-weight: 600;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Libros disponibles</h1>
+
+    {% if libros %}
+    <ul>
+      {% for libro in libros %}
+      <li>
+        <strong>{{ libro.nombre }}</strong><br />
+        Autor: {{ libro.autor }} ({{ libro.pais_autor }})<br />
+        Género: {{ libro.genero }}<br />
+        ISBN: {{ libro.isbn }}<br />
+
+        <form method="post" action="/preferencia">
+          <input type="hidden" name="genero" value="{{ libro.genero }}" />
+          <button type="submit" name="valor" value="me_gusta">Me gusta</button>
+          <button type="submit" name="valor" value="no_me_gusta">No me gusta</button>
+        </form>
+
+        <hr />
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p>No hay libros disponibles.</p>
+    {% endif %}
+
+    <p>
+      <a href="/recomendaciones">Ver recomendaciones basadas en mis gustos</a>
+    </p>
+  </body>
+</html>

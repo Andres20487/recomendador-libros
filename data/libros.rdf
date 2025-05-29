@@ -1,0 +1,14 @@
+@prefix : <http://example.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:Libro1 rdf:type :Libro ;
+        :titulo "Dune" ;
+        :isbn "1234567890" ;
+        :perteneceAGenero :CienciaFiccion ;
+        :escritoPor :FrankHerbert .
+
+:FrankHerbert rdf:type :Autor ;
+              :nombre "Frank Herbert" ;
+              :pais "Estados Unidos" .
+
+:CienciaFiccion rdf:type :Genero .

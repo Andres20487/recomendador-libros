@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Recomendaciones</title>
+</head>
+<body>
+    <h1>Recomendaciones basadas en tus gustos</h1>
+
+{% if libros %}
+    <ul>
+        {% for libro in libros %}
+            <li>
+                <strong>{{ libro.nombre }}</strong><br />
+                Autor: {{ libro.autor }}<br />
+                Género: {{ libro.genero }}<br />
+            </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No hay recomendaciones disponibles todavía. Marca libros como "Me gusta" para recibir sugerencias.</p>
+{% endif %}
+
+
+    <br><a href="/">Volver a la lista de libros</a>
+</body>
+</html>

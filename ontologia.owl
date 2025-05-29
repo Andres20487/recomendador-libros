@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:example="http://example.org/"
+>
+  <!-- Autores -->
+  <rdf:Description rdf:about="http://example.org/Autor/JKRowling">
+    <rdf:type rdf:resource="http://example.org/Autor"/>
+    <example:nombre>J.K. Rowling</example:nombre>
+    <example:pais>Reino Unido</example:pais>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://example.org/Autor/GeorgeOrwell">
+    <rdf:type rdf:resource="http://example.org/Autor"/>
+    <example:nombre>George Orwell</example:nombre>
+    <example:pais>Reino Unido</example:pais>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Autor/GabrielGarciaMarquez">
+    <rdf:type rdf:resource="http://example.org/Autor"/>
+    <example:nombre>Gabriel García Márquez</example:nombre>
+    <example:pais>Colombia</example:pais>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Autor/JaneAusten">
+    <rdf:type rdf:resource="http://example.org/Autor"/>
+    <example:nombre>Jane Austen</example:nombre>
+    <example:pais>Reino Unido</example:pais>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Autor/StephenKing">
+    <rdf:type rdf:resource="http://example.org/Autor"/>
+    <example:nombre>Stephen King</example:nombre>
+    <example:pais>Estados Unidos</example:pais>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Autor/JulioCortazar">
+    <rdf:type rdf:resource="http://example.org/Autor"/>
+    <example:nombre>Julio Cortázar</example:nombre>
+    <example:pais>Argentina</example:pais>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Autor/YuvalHarari">
+    <rdf:type rdf:resource="http://example.org/Autor"/>
+    <example:nombre>Yuval Harari</example:nombre>
+    <example:pais>Israel</example:pais>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Autor/MiguelCervantes">
+    <rdf:type rdf:resource="http://example.org/Autor"/>
+    <example:nombre>Miguel Cervantes</example:nombre>
+    <example:pais>España</example:pais>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Autor/CarlosRuizZafon">
+    <rdf:type rdf:resource="http://example.org/Autor"/>
+    <example:nombre>Carlos Ruiz Zafón</example:nombre>
+    <example:pais>España</example:pais>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Autor/AldousHuxley">
+    <rdf:type rdf:resource="http://example.org/Autor"/>
+    <example:nombre>Aldous Huxley</example:nombre>
+    <example:pais>Reino Unido</example:pais>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Autor/IsabelAllende">
+    <rdf:type rdf:resource="http://example.org/Autor"/>
+    <example:nombre>Isabel Allende</example:nombre>
+    <example:pais>Chile</example:pais>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Autor/JRRTolkien">
+    <rdf:type rdf:resource="http://example.org/Autor"/>
+    <example:nombre>J.R.R. Tolkien</example:nombre>
+    <example:pais>Reino Unido</example:pais>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Autor/PauloCoelho">
+    <rdf:type rdf:resource="http://example.org/Autor"/>
+    <example:nombre>Paulo Coelho</example:nombre>
+    <example:pais>Brasil</example:pais>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Autor/MarioPuzo">
+    <rdf:type rdf:resource="http://example.org/Autor"/>
+    <example:nombre>Mario Puzo</example:nombre>
+    <example:pais>Estados Unidos</example:pais>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Autor/SuzanneCollins">
+    <rdf:type rdf:resource="http://example.org/Autor"/>
+    <example:nombre>Suzanne Collins</example:nombre>
+    <example:pais>Estados Unidos</example:pais>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Autor/JoseSaramago">
+    <rdf:type rdf:resource="http://example.org/Autor"/>
+    <example:nombre>José Saramago</example:nombre>
+    <example:pais>Portugal</example:pais>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Autor/PatrickRothfuss">
+    <rdf:type rdf:resource="http://example.org/Autor"/>
+    <example:nombre>Patrick Rothfuss</example:nombre>
+    <example:pais>Estados Unidos</example:pais>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Autor/HarperLee">
+    <rdf:type rdf:resource="http://example.org/Autor"/>
+    <example:nombre>Harper Lee</example:nombre>
+    <example:pais>Estados Unidos</example:pais>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Autor/FranzKafka">
+    <rdf:type rdf:resource="http://example.org/Autor"/>
+    <example:nombre>Franz Kafka</example:nombre>
+    <example:pais>Austria-Hungría</example:pais>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Autor/RayBradbury">
+    <rdf:type rdf:resource="http://example.org/Autor"/>
+    <example:nombre>Ray Bradbury</example:nombre>
+    <example:pais>Estados Unidos</example:pais>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Autor/FyodorDostoevsky">
+    <rdf:type rdf:resource="http://example.org/Autor"/>
+    <example:nombre>Fyodor Dostoevsky</example:nombre>
+    <example:pais>Rusia</example:pais>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Autor/CarlSagan">
+    <rdf:type rdf:resource="http://example.org/Autor"/>
+    <example:nombre>Carl Sagan</example:nombre>
+    <example:pais>Estados Unidos</example:pais>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Autor/AnthonyBurgess">
+    <rdf:type rdf:resource="http://example.org/Autor"/>
+    <example:nombre>Anthony Burgess</example:nombre>
+    <example:pais>Reino Unido</example:pais>
+  </rdf:Description>
+
+  <!-- Géneros -->
+  <rdf:Description rdf:about="http://example.org/Genero/CienciaFiccion">
+    <rdf:type rdf:resource="http://example.org/Genero"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Genero/EnsayoHistorico">
+    <rdf:type rdf:resource="http://example.org/Genero"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Genero/Clasico">
+    <rdf:type rdf:resource="http://example.org/Genero"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Genero/Misterio">
+    <rdf:type rdf:resource="http://example.org/Genero"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Genero/Distopia">
+    <rdf:type rdf:resource="http://example.org/Genero"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Genero/Fantasia">
+    <rdf:type rdf:resource="http://example.org/Genero"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Genero/FiccionInspiracional">
+    <rdf:type rdf:resource="http://example.org/Genero"/>
+  </rdf:Description>
+
+  <!-- Libros -->
+  <rdf:Description rdf:about="http://example.org/Libro/SapiensDeanimalesadioses">
+    <rdf:type rdf:resource="http://example.org/Libro"/>
+    <example:titulo>Sapiens: De animales a dioses</example:titulo>
+    <example:isbn>978-8499924211</example:isbn>
+    <example:escritoPor rdf:resource="http://example.org/Autor/YuvalHarari"/>
+    <example:perteneceAGenero rdf:resource="http://example.org/Genero/EnsayoHistorico"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Libro/1984">
+    <rdf:type rdf:resource="http://example.org/Libro"/>
+    <example:titulo>1984</example:titulo>
+    <example:isbn>978-0451524935</example:isbn>
+    <example:escritoPor rdf:resource="http://example.org/Autor/GeorgeOrwell"/>
+    <example:perteneceAGenero rdf:resource="http://example.org/Genero/Distopia"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Libro/CienAniosDeSoledad">
+    <rdf:type rdf:resource="http://example.org/Libro"/>
+    <example:titulo>Cien años de soledad</example:titulo>
+    <example:isbn>978-0307474728</example:isbn>
+    <example:escritoPor rdf:resource="http://example.org/Autor/GabrielGarciaMarquez"/>
+    <example:perteneceAGenero rdf:resource="http://example.org/Genero/Clasico"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Libro/OrgulloYPrejuicio">
+    <rdf:type rdf:resource="http://example.org/Libro"/>
+    <example:titulo>Orgullo y prejuicio</example:titulo>
+    <example:isbn>978-1503290563</example:isbn>
+    <example:escritoPor rdf:resource="http://example.org/Autor/JaneAusten"/>
+    <example:perteneceAGenero rdf:resource="http://example.org/Genero/Clasico"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Libro/IT">
+    <rdf:type rdf:resource="http://example.org/Libro"/>
+    <example:titulo>It</example:titulo>
+    <example:isbn>978-1501142970</example:isbn>
+    <example:escritoPor rdf:resource="http://example.org/Autor/StephenKing"/>
+    <example:perteneceAGenero rdf:resource="http://example.org/Genero/Misterio"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Libro/FinalDelJuego">
+    <rdf:type rdf:resource="http://example.org/Libro"/>
+    <example:titulo>Final del juego</example:titulo>
+    <example:isbn>978-6070715641</example:isbn>
+    <example:escritoPor rdf:resource="http://example.org/Autor/JulioCortazar"/>
+    <example:perteneceAGenero rdf:resource="http://example.org/Genero/Clasico"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Libro/ElCodigoDaVinci">
+    <rdf:type rdf:resource="http://example.org/Libro"/>
+    <example:titulo>El código Da Vinci</example:titulo>
+    <example:isbn>978-0307474278</example:isbn>
+    <example:escritoPor rdf:resource="http://example.org/Autor/DanBrown"/>
+    <example:perteneceAGenero rdf:resource="http://example.org/Genero/Misterio"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Libro/ElSenorDeLosAnillos">
+    <rdf:type rdf:resource="http://example.org/Libro"/>
+    <example:titulo>El Señor de los Anillos</example:titulo>
+    <example:isbn>978-0544003415</example:isbn>
+    <example:escritoPor rdf:resource="http://example.org/Autor/JRRTolkien"/>
+    <example:perteneceAGenero rdf:resource="http://example.org/Genero/Fantasia"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Libro/LaSombraDelViento">
+    <rdf:type rdf:resource="http://example.org/Libro"/>
+    <example:titulo>La sombra del viento</example:titulo>
+    <example:isbn>978-8408082856</example:isbn>
+    <example:escritoPor rdf:resource="http://example.org/Autor/CarlosRuizZafon"/>
+    <example:perteneceAGenero rdf:resource="http://example.org/Genero/Misterio"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Libro/ElAlquimista">
+    <rdf:type rdf:resource="http://example.org/Libro"/>
+    <example:titulo>El alquimista</example:titulo>
+    <example:isbn>978-0061122415</example:isbn>
+    <example:escritoPor rdf:resource="http://example.org/Autor/PauloCoelho"/>
+    <example:perteneceAGenero rdf:resource="http://example.org/Genero/FiccionInspiracional"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Libro/LosJuegosDelHambre">
+    <rdf:type rdf:resource="http://example.org/Libro"/>
+    <example:titulo>Los juegos del hambre</example:titulo>
+    <example:isbn>978-0439023528</example:isbn>
+    <example:escritoPor rdf:resource="http://example.org/Autor/SuzanneCollins"/>
+    <example:perteneceAGenero rdf:resource="http://example.org/Genero/Distopia"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Libro/EnsayoSobreLaCeguera">
+    <rdf:type rdf:resource="http://example.org/Libro"/>
+    <example:titulo>Ensayo sobre la ceguera</example:titulo>
+    <example:isbn>978-8495905700</example:isbn>
+    <example:escritoPor rdf:resource="http://example.org/Autor/JoseSaramago"/>
+    <example:perteneceAGenero rdf:resource="http://example.org/Genero/EnsayoHistorico"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Libro/ElNombreDelViento">
+    <rdf:type rdf:resource="http://example.org/Libro"/>
+    <example:titulo>El nombre del viento</example:titulo>
+    <example:isbn>978-0756404741</example:isbn>
+    <example:escritoPor rdf:resource="http://example.org/Autor/PatrickRothfuss"/>
+    <example:perteneceAGenero rdf:resource="http://example.org/Genero/Fantasia"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Libro/MatarUnRuiseñor">
+    <rdf:type rdf:resource="http://example.org/Libro"/>
+    <example:titulo>Matar a un ruiseñor</example:titulo>
+    <example:isbn>978-0061120084</example:isbn>
+    <example:escritoPor rdf:resource="http://example.org/Autor/HarperLee"/>
+    <example:perteneceAGenero rdf:resource="http://example.org/Genero/Clasico"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Libro/LaMetamorfosis">
+    <rdf:type rdf:resource="http://example.org/Libro"/>
+    <example:titulo>La metamorfosis</example:titulo>
+    <example:isbn>978-0486290300</example:isbn>
+    <example:escritoPor rdf:resource="http://example.org/Autor/FranzKafka"/>
+    <example:perteneceAGenero rdf:resource="http://example.org/Genero/Clasico"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Libro/Fahrenheit451">
+    <rdf:type rdf:resource="http://example.org/Libro"/>
+    <example:titulo>Fahrenheit 451</example:titulo>
+    <example:isbn>978-1451673319</example:isbn>
+    <example:escritoPor rdf:resource="http://example.org/Autor/RayBradbury"/>
+    <example:perteneceAGenero rdf:resource="http://example.org/Genero/CienciaFiccion"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Libro/CrimenYCastigo">
+    <rdf:type rdf:resource="http://example.org/Libro"/>
+    <example:titulo>Crimen y castigo</example:titulo>
+    <example:isbn>978-0486415871</example:isbn>
+    <example:escritoPor rdf:resource="http://example.org/Autor/FyodorDostoevsky"/>
+    <example:perteneceAGenero rdf:resource="http://example.org/Genero/Clasico"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Libro/Contact">
+    <rdf:type rdf:resource="http://example.org/Libro"/>
+    <example:titulo>Contact</example:titulo>
+    <example:isbn>978-0743486224</example:isbn>
+    <example:escritoPor rdf:resource="http://example.org/Autor/CarlSagan"/>
+    <example:perteneceAGenero rdf:resource="http://example.org/Genero/CienciaFiccion"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Libro/LaNaranjaMecanica">
+    <rdf:type rdf:resource="http://example.org/Libro"/>
+    <example:titulo>La naranja mecánica</example:titulo>
+    <example:isbn>978-0393312836</example:isbn>
+    <example:escritoPor rdf:resource="http://example.org/Autor/AnthonyBurgess"/>
+    <example:perteneceAGenero rdf:resource="http://example.org/Genero/CienciaFiccion"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:example="http://example.org/"
+>
+
+  <!-- ========== Ontología Original (clases y propiedades) ========== -->
+  <!-- ... (todo el contenido original de clases/propiedades que compartiste) ... -->
+
+  <!-- ========== Instancias ========== -->
+
+  <!-- Autores (10) -->
+  <rdf:Description rdf:about="http://example.org/Autor/JKRowling">
+    <rdf:type rdf:resource="http://example.org/Autor"/>
+    <example:nombre>J.K. Rowling</example:nombre>
+    <example:pais>Reino Unido</example:pais>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Autor/GeorgeOrwell">
+    <rdf:type rdf:resource="http://example.org/Autor"/>
+    <example:nombre>George Orwell</example:nombre>
+    <example:pais>Reino Unido</example:pais>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Autor/GabrielGarciaMarquez">
+    <rdf:type rdf:resource="http://example.org/Autor"/>
+    <example:nombre>Gabriel García Márquez</example:nombre>
+    <example:pais>Colombia</example:pais>
+  </rdf:Description>
+
+  <!-- ... (7 autores más: Jane Austen, Stephen King, Julio Cortázar, etc.) ... -->
+
+  <!-- Libros (10) -->
+  <rdf:Description rdf:about="http://example.org/Libro/HarryPotter1">
+    <rdf:type rdf:resource="http://example.org/Libro"/>
+    <example:titulo>Harry Potter y la Piedra Filosofal</example:titulo>
+    <example:isbn>978-8478884456</example:isbn>
+    <example:escritoPor rdf:resource="http://example.org/Autor/JKRowling"/>
+    <example:perteneceAGenero rdf:resource="http://example.org/Genero/Fantasia"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Libro/1984">
+    <rdf:type rdf:resource="http://example.org/Libro"/>
+    <example:titulo>1984</example:titulo>
+    <example:isbn>978-0451524935</example:isbn>
+    <example:escritoPor rdf:resource="http://example.org/Autor/GeorgeOrwell"/>
+    <example:perteneceAGenero rdf:resource="http://example.org/Genero/CienciaFiccion"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Libro/CienAniosSoledad">
+    <rdf:type rdf:resource="http://example.org/Libro"/>
+    <example:titulo>Cien años de soledad</example:titulo>
+    <example:isbn>978-0307474728</example:isbn>
+    <example:escritoPor rdf:resource="http://example.org/Autor/GabrielGarciaMarquez"/>
+    <example:perteneceAGenero rdf:resource="http://example.org/Genero/RealismoMagico"/>
+  </rdf:Description>
+
+  <!-- ... (7 libros más: "Orgullo y prejuicio", "It", "Rayuela", etc.) ... -->
+
+  <!-- Géneros (10) -->
+  <rdf:Description rdf:about="http://example.org/Genero/Fantasia">
+    <rdf:type rdf:resource="http://example.org/Genero"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Genero/CienciaFiccion">
+    <rdf:type rdf:resource="http://example.org/Genero"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Genero/RealismoMagico">
+    <rdf:type rdf:resource="http://example.org/Genero"/>
+  </rdf:Description>
+
+  <!-- ... (7 géneros más: Terror, Romance, Misterio, Histórico, etc.) ... -->
+
+  <!-- Usuarios (10) -->
+  <rdf:Description rdf:about="http://example.org/Usuario/MariaPerez">
+    <rdf:type rdf:resource="http://example.org/Usuario"/>
+    <example:nombre>María Pérez</example:nombre>
+    <example:tieneInteres rdf:resource="http://example.org/Genero/Fantasia"/>
+    <example:haLeido rdf:resource="http://example.org/Libro/HarryPotter1"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Usuario/CarlosLopez">
+    <rdf:type rdf:resource="http://example.org/Usuario"/>
+    <example:nombre>Carlos López</example:nombre>
+    <example:tieneInteres rdf:resource="http://example.org/Genero/CienciaFiccion"/>
+    <example:haLeido rdf:resource="http://example.org/Libro/1984"/>
+  </rdf:Description>
+
+  <!-- ... (8 usuarios más con intereses y libros leídos variados) ... -->
+
+  <!-- Recomendaciones (10) -->
+  <rdf:Description rdf:about="http://example.org/Recomendacion/Rec001">
+    <rdf:type rdf:resource="http://example.org/Recomendacion"/>
+    <example:recomienda rdf:resource="http://example.org/Libro/1984"/>
+    <example:recomendadoA rdf:resource="http://example.org/Usuario/MariaPerez"/>
+    <example:fechaRecomendacion>2023-10-25</example:fechaRecomendacion>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Recomendacion/Rec002">
+    <rdf:type rdf:resource="http://example.org/Recomendacion"/>
+    <example:recomienda rdf:resource="http://example.org/Libro/CienAniosSoledad"/>
+    <example:recomendadoA rdf:resource="http://example.org/Usuario/CarlosLopez"/>
+    <example:fechaRecomendacion>2023-11-01</example:fechaRecomendacion>
+  </rdf:Description>
+
+  <!-- ... (8 recomendaciones más vinculando libros y usuarios) ... -->
+
+</rdf:RDF>
