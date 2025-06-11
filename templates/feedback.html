@@ -1,11 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
     <title>Gracias por tu opinión</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            padding: 40px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        strong {
+            font-size: 1.3em;
+            color: #34495e;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 30px;
+            color: #2980b9;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h2>Has indicado que {% if accion == 'like' %}te gusta{% else %}no te gusta{% endif %} el libro:</h2>
+    <h2>
+        Has indicado que 
+        {% if accion == 'me_gusta' %}
+            te gusta
+        {% else %}
+            no te gusta
+        {% endif %}
+        el libro:
+    </h2>
+
     <p><strong>{{ libro }}</strong></p>
+
     <a href="/">Volver a la lista</a>
 </body>
 </html>

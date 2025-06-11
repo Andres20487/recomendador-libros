@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Historial de Feedback</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f6f8;
+      color: #333;
+      padding: 40px;
+      margin: 0;
+    }
+
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 30px;
+      font-size: 2em;
+    }
+
+    .contenedor {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      background-color: #ecf0f1;
+      padding: 15px 20px;
+      border-radius: 6px;
+      margin-bottom: 12px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      font-weight: 500;
+    }
+
+    li span {
+      font-weight: bold;
+      color: #2c3e50;
+    }
+
+    .no-data {
+      text-align: center;
+      color: #888;
+      font-style: italic;
+    }
+
+    a {
+      display: block;
+      text-align: center;
+      margin-top: 30px;
+      color: #2980b9;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Preferencias registradas</h2>
+
+  <div class="contenedor">
+    {% if registros %}
+      <ul>
+        {% for genero, accion in registros %}
+          <li><span>{{ genero }}</span> — {% if accion == 'me_gusta' %}Te gusta{% else %}No te gusta{% endif %}</li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p class="no-data">No hay preferencias registradas aún.</p>
+    {% endif %}
+  </div>
+
+  <a href="/">Volver al inicio</a>
+
+</body>
+</html>

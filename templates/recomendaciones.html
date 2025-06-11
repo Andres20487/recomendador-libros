@@ -3,25 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <title>Recomendaciones</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f9f9f9;
+            color: #333;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        p.mensaje {
+            text-align: center;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        ul {
+            list-style: none;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 0;
+        }
+        li {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        }
+        strong {
+            font-size: 1.1em;
+            color: #34495e;
+        }
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 40px;
+            color: #2980b9;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <h1>Recomendaciones basadas en tus gustos</h1>
 
-{% if libros %}
-    <ul>
-        {% for libro in libros %}
-            <li>
-                <strong>{{ libro.nombre }}</strong><br />
-                Autor: {{ libro.autor }}<br />
-                Género: {{ libro.genero }}<br />
-            </li>
-        {% endfor %}
-    </ul>
-{% else %}
-    <p>No hay recomendaciones disponibles todavía. Marca libros como "Me gusta" para recibir sugerencias.</p>
-{% endif %}
+    {% if mensaje %}
+      <p class="mensaje">{{ mensaje }}</p>
+    {% endif %}
 
+    {% if libros %}
+        <ul>
+            {% for libro in libros %}
+                <li>
+                    <strong>{{ libro.nombre }}</strong><br />
+                    Autor: {{ libro.autor }}<br />
+                    Género: {{ libro.genero }}<br />
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p class="mensaje">No hay recomendaciones disponibles todavía. Marca libros como "Me gusta" para recibir sugerencias.</p>
+    {% endif %}
 
-    <br><a href="/">Volver a la lista de libros</a>
+    <a href="/">Volver a la lista de libros</a>
 </body>
 </html>

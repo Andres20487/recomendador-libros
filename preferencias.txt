@@ -1,0 +1,5 @@
+Misterio,no_me_gusta
+Fantasia,me_gusta
+CienciaFiccion,me_gusta
+CienciaFiccion,no_me_gusta
+Misterio,me_gusta
